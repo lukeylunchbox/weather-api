@@ -1,0 +1,37 @@
+.hero {
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+    height: 700px;
+    background: rgb(221, 250, 58);
+    padding: 30px;
+    box-shadow: 5px 10px;
+}
+
+
+html {
+    padding: 15px;
+    padding-top: 100px;
+    
+}
+
+h1, h3 {
+    font-family: 'Audiowide', cursive;
+}
+
+p {
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+}
+
+input {
+    font-family: 'Play', sans-serif;
+    background: rgb(230, 230, 230); 
+}   
+
+body {
+    background-image: url('http://backgroundcheckall.com/wp-content/uploads/2017/12/clouds-background-hd-7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

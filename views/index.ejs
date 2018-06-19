@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Luke's Weather API</title>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Luke Weather</h1>
+        <br>
+      <h3>Please Enter Your City</h3>
+    </br>
+      <form action="/" method="post">
+        <input name="city" type="text">
+        <input type="submit" value="Get weather">
+      </form>
+    
+        
+                <% if(locals.details !== null){ %>
+                </br>
+                </br>
+                <p><%= locals.weatherString %></p>
+                </br>
+                <p><%= locals.weatherString2 %></p>
+                </br>
+                <p><%= locals.weatherString3 %></p>
+              </br>
+                <p><%= locals.quote %></p>
+              </br>
+              <img src=<%= locals.pokemonImage %> height="100" width="100">
+            </br>
+              <p><%= locals.pokemonName %></p>
+
+                <% } %>
+                    
+                <% if(locals.details == null){ %>
+                </br>
+                </br>
+                <p><%= locals.error %></p>
+                <% } %>
+        
+    </div>
+   
+</body>
+</html>
+
